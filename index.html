@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- ======================================
+       GANTI JUDUL TAB BROWSER DI SINI
+  ====================================== -->
+  <title>Fauzi Zaki Razaq — Music Composer & Sound Designer</title>
+
+  <link rel="stylesheet" href="style.css"/>
+
+  <!-- Google Fonts — jangan diubah kecuali ingin ganti font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+
+<!-- ══════════════════════════════════════════════
+     NAVBAR
+     Jangan ubah struktur ini.
+     Ganti teks "FZR PRODUCTION" jika perlu.
+══════════════════════════════════════════════ -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+
+    <!-- GANTI NAMA BRAND DI SINI -->
+    <a href="#home" class="logo">
+      <span class="logo-mark">♩</span>
+      <span>FZR PRODUCTION</span>
+    </a>
+
+    <!-- Menu navigasi -->
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home"      class="nlink">Home</a></li>
+      <li><a href="#portfolio" class="nlink">Portfolio</a></li>
+      <li><a href="#about"     class="nlink">About</a></li>
+      <li><a href="#contact"   class="nlink">Contact</a></li>
+    </ul>
+
+    <!-- Tombol hamburger (hanya tampil di mobile) -->
+    <button class="ham" id="ham" aria-label="Buka menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+  </div>
+</nav>
+
+
+<!-- ══════════════════════════════════════════════
+     HERO SECTION
+     Bagian utama di atas layar.
+══════════════════════════════════════════════ -->
+<section class="hero" id="home">
+
+  <!-- Elemen latar belakang dekoratif — jangan diubah -->
+  <div class="hero-bg" aria-hidden="true">
+    <div class="hbg-glow gl1"></div>
+    <div class="hbg-glow gl2"></div>
+  </div>
+
+  <!-- Animasi batang EQ — dibuat otomatis oleh JavaScript -->
+  <div class="eq-wrap" id="eqWrap" aria-hidden="true"></div>
+
+  <!-- Konten hero -->
+  <div class="hero-content">
+
+    <!-- Nama + indikator online -->
+    <p class="hero-eyebrow">
+      <span class="dot-live" aria-hidden="true"></span>
+      <!-- GANTI NAMA DI SINI -->
+      <span class="hero-name">Fauzi Zaki Razaq</span>
+    </p>
+
+    <!-- GANTI SUBTITLE DI SINI -->
+    <p class="hero-sub">Music Composer&nbsp;&nbsp;·&nbsp;&nbsp;Audio Engineer</p>
+
+    <!-- GANTI DESKRIPSI DI SINI -->
+    <p class="hero-desc">
+      Menciptakan musik, sound design, dan background music untuk film, game,
+      konten digital, dan kolaborasi bersama kreator ternama Indonesia.
+    </p>
+
+    <!-- Tombol CTA -->
+    <div class="hero-cta">
+      <a href="#portfolio" class="btn-primary">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+        Lihat Portfolio
+      </a>
+      <a href="#contact" class="btn-ghost">Hubungi Saya</a>
+    </div>
+
+    <!-- Statistik — GANTI ANGKA di data-count-target dan data-count-suffix -->
+    <div class="hero-nums">
+      <div class="hn">
+        <strong class="stat-counter" data-count-target="50" data-count-suffix="+">50+</strong>
+        <span>Projects</span>
+      </div>
+      <div class="hn-sep" aria-hidden="true"></div>
+      <div class="hn">
+        <strong class="stat-counter" data-count-target="5" data-count-suffix="+">5+</strong>
+        <span>Years</span>
+      </div>
+      <div class="hn-sep" aria-hidden="true"></div>
+      <div class="hn">
+        <strong class="stat-counter" data-count-target="30" data-count-suffix="+">30+</strong>
+        <span>Creators</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════════
+     PORTFOLIO SECTION
+     ────────────────────────────────────────────
+     CARA MENAMBAH KARYA BARU:
+     1. Duplikat satu blok <a class="work-card">
+     2. Ganti href dengan link YouTube/TikTok/Instagram
+     3. Ganti src thumbnail (/images/nama-file.jpg)
+     4. Ganti teks card-title
+     5. Simpan file
+
+     STRUKTUR FOLDER GAMBAR:
+     /images/song1.jpg
+     /images/song2.jpg
+     /images/animation1.jpg
+     /images/instrumental1.jpg
+     (dst.)
+══════════════════════════════════════════════ -->
+<section class="portfolio" id="portfolio">
+  <div class="container">
+
+    <div class="sec-hd">
+      <!-- GANTI JUDUL SECTION DI SINI -->
+      <h2>PORTOFOLIO</h2>
+      <p>Karya yang telah tayang di YouTube, TikTok, dan Instagram.</p>
+    </div>
+
+    <!-- Tab navigasi — jangan ubah struktur data-tab -->
+    <div class="ptabs" role="tablist">
+      <button class="ptab active" data-tab="song" role="tab" aria-selected="true">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16" aria-hidden="true">
+          <path d="M12 14a3 3 0 0 0 3-3V5a3 3 0 0 0-6 0v6a3 3 0 0 0 3 3zm5-3a5 5 0 0 1-10 0H5a7 7 0 0 0 14 0h-2zM11 19h2v3h-2v-3z"/>
+        </svg>
+        Song
+      </button>
+      <button class="ptab" data-tab="animation" role="tab" aria-selected="false">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16" aria-hidden="true">
+          <path d="M4 2h16a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm0 2v4h16V4H4zm16 6H4v10h16V10zm-2 2v2h-4v-2h4zm0 4v2h-4v-2h4z"/>
+        </svg>
+        Animation
+      </button>
+      <button class="ptab" data-tab="instrumental" role="tab" aria-selected="false">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16" aria-hidden="true">
+          <path d="M12 3v10.55a4 4 0 1 0 2-3.45V6h4V3h-6z"/>
+        </svg>
+        Instrumental
+      </button>
+    </div>
+
+
+    <!-- ══════════════════════════════════════════
+         TAB: SONG
+         Hapus atau tambah card sesuai kebutuhan.
+    ══════════════════════════════════════════ -->
+    <div class="tab-panel active" id="tab-song" role="tabpanel">
+      <div class="portfolio-grid">
+
+        <!--
+          ======================================
+          SONG CARD 1
+          - href    : ganti dengan link YouTube/TikTok/Instagram Anda
+          - src     : ganti dengan path thumbnail (/images/nama.jpg)
+          - alt     : ganti dengan judul karya
+          - card-title: ganti dengan judul karya
+          ======================================
+        -->
+        <a class="work-card" href="https://youtu.be/FBwKR5TCDoQ?si=_M1Qqz8aWLOZZFxi" target="_blank" rel="noopener noreferrer" data-reveal>
+          <!-- GANTI THUMBNAIL DI SINI -->
+          <div class="card-thumb">
+            <img src="/images/song1.png" alt="Official Jingle Edusantara.id" loading="lazy"/>
+            <!-- Overlay muncul saat hover — jangan diubah -->
+            <div class="card-overlay" aria-hidden="true">
+              <span class="watch-pill">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                Watch
+              </span>
+            </div>
+          </div>
+          <div class="card-meta">
+            <!-- GANTI JUDUL DI SINI -->
+            <p class="card-title">Official Jingle Edusantara.id</p>
+            <span class="card-watch">Watch ↗</span>
+          </div>
+        </a>
+
+        <!--
+          ======================================
+          SONG CARD 2
+          ======================================
+        -->
+        <a class="work-card" href="https://www.instagram.com/reel/C_16L9NPmD1/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==" target="_blank" rel="noopener noreferrer" data-reveal>
+          <!-- GANTI THUMBNAIL DI SINI -->
+          <div class="card-thumb">
+            <img src="/images/song2.png" alt="Official Jingle Jalantara.id" loading="lazy"/>
+            <div class="card-overlay" aria-hidden="true">
+              <span class="watch-pill">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                Watch
+              </span>
+            </div>
+          </div>
+          <div class="card-meta">
+            <!-- GANTI JUDUL DI SINI -->
+            <p class="card-title">Official Jingle Jalantara.id</p>
+            <span class="card-watch">Watch ↗</span>
+          </div>
+        </a>
+
+        <!--
+          ======================================
+          SONG CARD 3
+          ======================================
+        -->
+        <a class="work-card" href="https://www.instagram.com/reel/GANTI_ID/" target="_blank" rel="noopener noreferrer" data-reveal>
+          <!-- GANTI THUMBNAIL DI SINI -->
+          <div class="card-thumb">
+            <img src="/images/song3.jpg" alt="Original Song #3" loading="lazy"/>
+            <div class="card-overlay" aria-hidden="true">
+              <span class="watch-pill">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                Watch
+              </span>
+            </div>
+          </div>
+          <div class="card-meta">
+            <!-- GANTI JUDUL DI SINI -->
+            <p class="card-title">Original Song #3</p>
+            <span class="card-watch">Watch ↗</span>
+          </div>
+        </a>
+
+        <!--
+          ======================================
+          SONG CARD 4
+          ======================================
+        -->
+        <a class="work-card" href="https://www.youtube.com/watch?v=GANTI_ID_YOUTUBE" target="_blank" rel="noopener noreferrer" data-reveal>
+          <!-- GANTI THUMBNAIL DI SINI -->
+          <div class="card-thumb">
+            <img src="/images/song4.jpg" alt="Original Song #4" loading="lazy"/>
+            <div class="card-overlay" aria-hidden="true">
+              <span class="watch-pill">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                Watch
+              </span>
+            </div>
+          </div>
+          <div class="card-meta">
+            <!-- GANTI JUDUL DI SINI -->
+            <p class="card-title">Original Song #4</p>
+            <span class="card-watch">Watch ↗</span>
+          </div>
+        </a>
+
+        <!--
+          ======================================
+          SONG CARD 5
+          ======================================
+        -->
+        <a class="work-card" href="https://www.tiktok.com/@GANTI_USERNAME/video/GANTI_ID" target="_blank" rel="noopener noreferrer" data-reveal>
+          <!-- GANTI THUMBNAIL DI SINI -->
+          <div class="card-thumb">
+            <img src="/images/song5.jpg" alt="Original Song #5" loading="lazy"/>
+            <div class="card-overlay" aria-hidden="true">
+              <span class="watch-pill">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                Watch
+              </span>
+            </div>
+          </div>
+          <div class="card-meta">
+            <!-- GANTI JUDUL DI SINI -->
+            <p class="card-title">Original Song #5</p>
+            <span class="card-watch">Watch ↗</span>
+          </div>
+        </a>
+
+        <!--
+          ======================================
+          SONG CARD 6
+          ======================================
+        -->
+        <a class="work-card" href="https://www.instagram.com/reel/GANTI_ID/" target="_blank" rel="noopener noreferrer" data-reveal>
+          <!-- GANTI THUMBNAIL DI SINI -->
+          <div class="card-thumb">
+            <img src="/images/song6.jpg" alt="Original Song #6" loading="lazy"/>
+            <div class="card-overlay" aria-hidden="true">
+              <span class="watch-pill">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                Watch
+              </span>
+            </div>
+          </div>
+          <div class="card-meta">
+            <!-- GANTI JUDUL DI SINI -->
+            <p class="card-title">Original Song #6</p>
+            <span class="card-watch">Watch ↗</span>
+          </div>
+        </a>
+
+        <!--
+          ======================================
+          SONG CARD 7
+          ======================================
+        -->
+        <a class="work-card" href="https://www.youtube.com/watch?v=GANTI_ID_YOUTUBE" target="_blank" rel="noopener noreferrer" data-reveal>
+          <!-- GANTI THUMBNAIL DI SINI -->
+          <div class="card-thumb">
+            <img src="/images/song7.jpg" alt="Official Edusantara.id" loading="lazy"/>
+            <div class="card-overlay" aria-hidden="true">
+              <span class="watch-pill">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                Watch
+              </span>
+            </div>
+          </div>
+          <div class="card-meta">
+            <!-- GANTI JUDUL DI SINI -->
+            <p class="card-title">Official Edusantara.id</p>
+            <span class="card-watch">Watch ↗</span>
+          </div>
+        </a>
+
+        <!--
+          ======================================
+          SONG CARD 8
+          ======================================
+        -->
+        <a class="work-card" href="https://www.youtube.com/watch?v=GANTI_ID_YOUTUBE" target="_blank" rel="noopener noreferrer" data-reveal>
+          <!-- GANTI THUMBNAIL DI SINI -->
+          <div class="card-thumb">
+            <img src="/images/song8.jpg" alt="Original Song #8" loading="lazy"/>
+            <div class="card-overlay" aria-hidden="true">
+              <span class="watch-pill">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                Watch
+              </span>
+            </div>
+          </div>
+          <div class="card-meta">
+            <!-- GANTI JUDUL DI SINI -->
+            <p class="card-title">Original Song #8</p>
+            <span class="card-watch">Watch ↗</span>
+          </div>
+        </a>
+
+      </div>
+    </div><!-- /tab-song -->
+
+
+    <!-- ══════════════════════════════════════════
+         TAB: ANIMATION
+         Struktur card sama persis dengan Song.
+         Tinggal ganti href, src, dan judul.
+    ══════════════════════════════════════════ -->
+    <div class="tab-panel" id="tab-animation" role="tabpanel">
+      <div class="portfolio-grid">
+
+        <!--
+          ======================================
+          ANIMATION CARD 1
+          ======================================
+        -->
+        <a class="work-card" href="https://www.tiktok.com/@GANTI_USERNAME/video/GANTI_ID" target="_blank" rel="noopener noreferrer" data-reveal>
+          <!-- GANTI THUMBNAIL DI SINI -->
+          <div class="card-thumb">
+            <img src="/images/animation1.jpg" alt="Animation Sound Design" loading="lazy"/>
+            <div class="card-overlay" aria-hidden="true">
+              <span class="watch-pill">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                Watch
+              </span>
+            </div>
+          </div>
+          <div class="card-meta">
+            <!-- GANTI JUDUL DI SINI -->
+            <p class="card-title">Animation Sound Design</p>
+            <span class="card-watch">Watch ↗</span>
+          </div>
+        </a>
+
+        <!--
+          ======================================
+          ANIMATION CARD 2
+          ======================================
+        -->
+        <a class="work-card" href="https://www.youtube.com/watch?v=GANTI_ID_YOUTUBE" target="_blank" rel="noopener noreferrer" data-reveal>
+          <!-- GANTI THUMBNAIL DI SINI -->
+          <div class="card-thumb">
+            <img src="/images/animation2.jpg" alt="Animation Score #2" loading="lazy"/>
+            <div class="card-overlay" aria-hidden="true">
+              <span class="watch-pill">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                Watch
+              </span>
+            </div>
+          </div>
+          <div class="card-meta">
+            <!-- GANTI JUDUL DI SINI -->
+            <p class="card-title">Animation Score #2</p>
+            <span class="card-watch">Watch ↗</span>
+          </div>
+        </a>
+
+        <!--
+          ======================================
+          ANIMATION CARD 3
+          ======================================
+        -->
+        <a class="work-card" href="https://www.instagram.com/reel/GANTI_ID/" target="_blank" rel="noopener noreferrer" data-reveal>
+          <!-- GANTI THUMBNAIL DI SINI -->
+          <div class="card-thumb">
+            <img src="/images/animation3.jpg" alt="Animation Score #3" loading="lazy"/>
+            <div class="card-overlay" aria-hidden="true">
+              <span class="watch-pill">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                Watch
+              </span>
+            </div>
+          </div>
+          <div class="card-meta">
+            <!-- GANTI JUDUL DI SINI -->
+            <p class="card-title">Animation Score #3</p>
+            <span class="card-watch">Watch ↗</span>
+          </div>
+        </a>
+
+        <!--
+          ======================================
+          ANIMATION CARD 4
+          ======================================
+        -->
+        <a class="work-card" href="https://www.youtube.com/watch?v=GANTI_ID_YOUTUBE" target="_blank" rel="noopener noreferrer" data-reveal>
+          <!-- GANTI THUMBNAIL DI SINI -->
+          <div class="card-thumb">
+            <img src="/images/animation4.jpg" alt="Animation Score #4" loading="lazy"/>
+            <div class="card-overlay" aria-hidden="true">
+              <span class="watch-pill">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                Watch
+              </span>
+            </div>
+          </div>
+          <div class="card-meta">
+            <!-- GANTI JUDUL DI SINI -->
+            <p class="card-title">Animation Score #4</p>
+            <span class="card-watch">Watch ↗</span>
+          </div>
+        </a>
+
+        <!--
+          ======================================
+          ANIMATION CARD 5
+          ======================================
+        -->
+        <a class="work-card" href="https://www.tiktok.com/@GANTI_USERNAME/video/GANTI_ID" target="_blank" rel="noopener noreferrer" data-reveal>
+          <!-- GANTI THUMBNAIL DI SINI -->
+          <div class="card-thumb">
+            <img src="/images/animation5.jpg" alt="Animation Score #5" loading="lazy"/>
+            <div class="card-overlay" aria-hidden="true">
+              <span class="watch-pill">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                Watch
+              </span>
+            </div>
+          </div>
+          <div class="card-meta">
+            <!-- GANTI JUDUL DI SINI -->
+            <p class="card-title">Animation Score #5</p>
+            <span class="card-watch">Watch ↗</span>
+          </div>
+        </a>
+
+        <!--
+          ======================================
+          ANIMATION CARD 6
+          ======================================
+        -->
+        <a class="work-card" href="https://www.instagram.com/reel/GANTI_ID/" target="_blank" rel="noopener noreferrer" data-reveal>
+          <!-- GANTI THUMBNAIL DI SINI -->
+          <div class="card-thumb">
+            <img src="/images/animation6.jpg" alt="Animation Score #6" loading="lazy"/>
+            <div class="card-overlay" aria-hidden="true">
+              <span class="watch-pill">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                Watch
+              </span>
+            </div>
+          </div>
+          <div class="card-meta">
+            <!-- GANTI JUDUL DI SINI -->
+            <p class="card-title">Animation Score #6</p>
+            <span class="card-watch">Watch ↗</span>
+          </div>
+        </a>
+
+        <!--
+          ======================================
+          ANIMATION CARD 7
+          ======================================
+        -->
+        <a class="work-card" href="https://www.youtube.com/watch?v=GANTI_ID_YOUTUBE" target="_blank" rel="noopener noreferrer" data-reveal>
+          <!-- GANTI THUMBNAIL DI SINI -->
+          <div class="card-thumb">
+            <img src="/images/animation7.jpg" alt="Animation Score #7" loading="lazy"/>
+            <div class="card-overlay" aria-hidden="true">
+              <span class="watch-pill">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                Watch
+              </span>
+            </div>
+          </div>
+          <div class="card-meta">
+            <!-- GANTI JUDUL DI SINI -->
+            <p class="card-title">Animation Score #7</p>
+            <span class="card-watch">Watch ↗</span>
+          </div>
+        </a>
+
+        <!--
+          ======================================
+          ANIMATION CARD 8
+          ======================================
+        -->
+        <a class="work-card" href="https://www.tiktok.com/@GANTI_USERNAME/video/GANTI_ID" target="_blank" rel="noopener noreferrer" data-reveal>
+          <!-- GANTI THUMBNAIL DI SINI -->
+          <div class="card-thumb">
+            <img src="/images/animation8.jpg" alt="Animation Score #8" loading="lazy"/>
+            <div class="card-overlay" aria-hidden="true">
+              <span class="watch-pill">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                Watch
+              </span>
+            </div>
+          </div>
+          <div class="card-meta">
+            <!-- GANTI JUDUL DI SINI -->
+            <p class="card-title">Animation Score #8</p>
+            <span class="card-watch">Watch ↗</span>
+          </div>
+        </a>
+
+      </div>
+    </div><!-- /tab-animation -->
+
+
+    <!-- ══════════════════════════════════════════
+         TAB: INSTRUMENTAL
+         Struktur card sama persis dengan Song.
+         Tinggal ganti href, src, dan judul.
+    ══════════════════════════════════════════ -->
+    <div class="tab-panel" id="tab-instrumental" role="tabpanel">
+      <div class="portfolio-grid">
+
+        <!--
+          ======================================
+          INSTRUMENTAL CARD 1
+          ======================================
+        -->
+        <a class="work-card" href="https://www.youtube.com/watch?v=GANTI_ID_YOUTUBE" target="_blank" rel="noopener noreferrer" data-reveal>
+          <!-- GANTI THUMBNAIL DI SINI -->
+          <div class="card-thumb">
+            <img src="/images/instrumental1.jpg" alt="Piano Theme" loading="lazy"/>
+            <div class="card-overlay" aria-hidden="true">
+              <span class="watch-pill">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                Watch
+              </span>
+            </div>
+          </div>
+          <div class="card-meta">
+            <!-- GANTI JUDUL DI SINI -->
+            <p class="card-title">Piano Theme</p>
+            <span class="card-watch">Watch ↗</span>
+          </div>
+        </a>
+
+        <!--
+          ======================================
+          INSTRUMENTAL CARD 2
+          ======================================
+        -->
+        <a class="work-card" href="https://www.tiktok.com/@GANTI_USERNAME/video/GANTI_ID" target="_blank" rel="noopener noreferrer" data-reveal>
+          <!-- GANTI THUMBNAIL DI SINI -->
+          <div class="card-thumb">
+            <img src="/images/instrumental2.jpg" alt="Instrumental #2" loading="lazy"/>
+            <div class="card-overlay" aria-hidden="true">
+              <span class="watch-pill">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                Watch
+              </span>
+            </div>
+          </div>
+          <div class="card-meta">
+            <!-- GANTI JUDUL DI SINI -->
+            <p class="card-title">Instrumental #2</p>
+            <span class="card-watch">Watch ↗</span>
+          </div>
+        </a>
+
+        <!--
+          ======================================
+          INSTRUMENTAL CARD 3
+          ======================================
+        -->
+        <a class="work-card" href="https://www.instagram.com/reel/GANTI_ID/" target="_blank" rel="noopener noreferrer" data-reveal>
+          <!-- GANTI THUMBNAIL DI SINI -->
+          <div class="card-thumb">
+            <img src="/images/instrumental3.jpg" alt="Instrumental #3" loading="lazy"/>
+            <div class="card-overlay" aria-hidden="true">
+              <span class="watch-pill">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                Watch
+              </span>
+            </div>
+          </div>
+          <div class="card-meta">
+            <!-- GANTI JUDUL DI SINI -->
+            <p class="card-title">Instrumental #3</p>
+            <span class="card-watch">Watch ↗</span>
+          </div>
+        </a>
+
+        <!--
+          ======================================
+          INSTRUMENTAL CARD 4
+          ======================================
+        -->
+        <a class="work-card" href="https://www.youtube.com/watch?v=GANTI_ID_YOUTUBE" target="_blank" rel="noopener noreferrer" data-reveal>
+          <!-- GANTI THUMBNAIL DI SINI -->
+          <div class="card-thumb">
+            <img src="/images/instrumental4.jpg" alt="Instrumental #4" loading="lazy"/>
+            <div class="card-overlay" aria-hidden="true">
+              <span class="watch-pill">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                Watch
+              </span>
+            </div>
+          </div>
+          <div class="card-meta">
+            <!-- GANTI JUDUL DI SINI -->
+            <p class="card-title">Instrumental #4</p>
+            <span class="card-watch">Watch ↗</span>
+          </div>
+        </a>
+
+        <!--
+          ======================================
+          INSTRUMENTAL CARD 5
+          ======================================
+        -->
+        <a class="work-card" href="https://www.tiktok.com/@GANTI_USERNAME/video/GANTI_ID" target="_blank" rel="noopener noreferrer" data-reveal>
+          <!-- GANTI THUMBNAIL DI SINI -->
+          <div class="card-thumb">
+            <img src="/images/instrumental5.jpg" alt="Instrumental #5" loading="lazy"/>
+            <div class="card-overlay" aria-hidden="true">
+              <span class="watch-pill">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                Watch
+              </span>
+            </div>
+          </div>
+          <div class="card-meta">
+            <!-- GANTI JUDUL DI SINI -->
+            <p class="card-title">Instrumental #5</p>
+            <span class="card-watch">Watch ↗</span>
+          </div>
+        </a>
+
+        <!--
+          ======================================
+          INSTRUMENTAL CARD 6
+          ======================================
+        -->
+        <a class="work-card" href="https://www.instagram.com/reel/GANTI_ID/" target="_blank" rel="noopener noreferrer" data-reveal>
+          <!-- GANTI THUMBNAIL DI SINI -->
+          <div class="card-thumb">
+            <img src="/images/instrumental6.jpg" alt="Instrumental #6" loading="lazy"/>
+            <div class="card-overlay" aria-hidden="true">
+              <span class="watch-pill">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                Watch
+              </span>
+            </div>
+          </div>
+          <div class="card-meta">
+            <!-- GANTI JUDUL DI SINI -->
+            <p class="card-title">Instrumental #6</p>
+            <span class="card-watch">Watch ↗</span>
+          </div>
+        </a>
+
+        <!--
+          ======================================
+          INSTRUMENTAL CARD 7
+          ======================================
+        -->
+        <a class="work-card" href="https://www.youtube.com/watch?v=GANTI_ID_YOUTUBE" target="_blank" rel="noopener noreferrer" data-reveal>
+          <!-- GANTI THUMBNAIL DI SINI -->
+          <div class="card-thumb">
+            <img src="/images/instrumental7.jpg" alt="Instrumental #7" loading="lazy"/>
+            <div class="card-overlay" aria-hidden="true">
+              <span class="watch-pill">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                Watch
+              </span>
+            </div>
+          </div>
+          <div class="card-meta">
+            <!-- GANTI JUDUL DI SINI -->
+            <p class="card-title">Instrumental #7</p>
+            <span class="card-watch">Watch ↗</span>
+          </div>
+        </a>
+
+        <!--
+          ======================================
+          INSTRUMENTAL CARD 8
+          ======================================
+        -->
+        <a class="work-card" href="https://www.tiktok.com/@GANTI_USERNAME/video/GANTI_ID" target="_blank" rel="noopener noreferrer" data-reveal>
+          <!-- GANTI THUMBNAIL DI SINI -->
+          <div class="card-thumb">
+            <img src="/images/instrumental8.jpg" alt="Instrumental #8" loading="lazy"/>
+            <div class="card-overlay" aria-hidden="true">
+              <span class="watch-pill">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                Watch
+              </span>
+            </div>
+          </div>
+          <div class="card-meta">
+            <!-- GANTI JUDUL DI SINI -->
+            <p class="card-title">Instrumental #8</p>
+            <span class="card-watch">Watch ↗</span>
+          </div>
+        </a>
+
+      </div>
+    </div><!-- /tab-instrumental -->
+
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════════
+     ABOUT SECTION
+══════════════════════════════════════════════ -->
+<section class="about" id="about">
+  <div class="container">
+    <div class="about-grid">
+
+      <!-- Foto profil -->
+      <div class="about-visual" data-reveal>
+        <div class="av-frame">
+          <div class="av-circle">
+            <!--
+              ======================================
+              GANTI FOTO PROFIL DI SINI
+              Ganti path foto di bawah dengan foto Anda.
+              Contoh: src="images/foto-saya.jpg"
+              ======================================
+            -->
+            <img
+              src="profile.jpg"
+              alt="Fauzi Zaki Razaq"
+              class="av-photo"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- Teks tentang saya -->
+      <div class="about-text" data-reveal>
+
+        <!-- GANTI JUDUL DI SINI -->
+        <h2>Music Composer<br>&amp; <span class="hi">Sound Designer</span></h2>
+
+        <!-- GANTI PARAGRAF DI SINI -->
+        <p>
+          Halo, saya <strong>Fauzi Zaki Razaq</strong> — Music Composer dan Sound Designer
+          dengan pengalaman lebih dari 5 tahun dalam industri audio kreatif Indonesia.
+        </p>
+        <p>
+          Karya saya telah digunakan oleh artis dan kreator ternama seperti
+          <strong>Atta Halilintar, Raffi Nagita, Awkarin, Denny Caknan, Ayu Ting Ting</strong>,
+          dan banyak lagi — di platform YouTube, TikTok, dan Instagram.
+        </p>
+
+        <!-- GANTI atau HAPUS skill chips sesuai keahlian Anda -->
+        <div class="skill-chips">
+          <span>🎼 Music Composition</span>
+          <span>🔊 Sound Design</span>
+          <span>🎹 Background Music</span>
+          <span>🎚️ Audio Editing</span>
+          <span>🎛️ Mixing & Mastering</span>
+          <span>🎬 Film Score</span>
+        </div>
+
+        <!-- GANTI atau HAPUS tool chips sesuai software yang Anda gunakan -->
+        <div class="tools-row">
+          <span class="tool-chip">FL Studio</span>
+          <span class="tool-chip">Ableton Live</span>
+          <span class="tool-chip">Logic Pro X</span>
+          <span class="tool-chip">Pro Tools</span>
+          <span class="tool-chip">Serum</span>
+          <span class="tool-chip">Kontakt</span>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════════
+     CONTACT SECTION
+══════════════════════════════════════════════ -->
+<section class="contact" id="contact">
+  <div class="container">
+
+    <div class="sec-hd">
+      <span class="sec-tag">Contact</span>
+      <h2>Let's <span class="hi">Collaborate</span></h2>
+      <p>Tertarik bekerja sama? Hubungi saya melalui kontak di bawah ini.</p>
+    </div>
+
+    <div class="contact-grid">
+
+      <!-- Info kontak & sosmed -->
+      <div class="ct-info" data-reveal>
+        <div class="ct-links">
+
+          <!--
+            ======================================
+            GANTI EMAIL DI SINI
+            Ganti "your@email.com" dengan email Anda
+            ======================================
+          -->
+          <a href="mailto:your@email.com" class="ct-item">
+            <div class="cti-icon email-ic">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20" aria-hidden="true">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+            </div>
+            <div>
+              <span class="cti-lbl">Email</span>
+              <!-- GANTI EMAIL YANG TAMPIL DI SINI -->
+              <span class="cti-val">your@email.com</span>
+            </div>
+          </a>
+
+          <!--
+            ======================================
+            GANTI NOMOR WHATSAPP DI SINI
+            Format: 62XXXXXXXXXX (tanpa + dan spasi)
+            Contoh: 6281234567890
+            ======================================
+          -->
+          <a href="https://wa.me/6281234567890" target="_blank" rel="noopener" class="ct-item">
+            <div class="cti-icon wa-ic">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+              </svg>
+            </div>
+            <div>
+              <span class="cti-lbl">WhatsApp</span>
+              <!-- GANTI NOMOR YANG TAMPIL DI SINI -->
+              <span class="cti-val">+62 812-3456-7890</span>
+            </div>
+          </a>
+
+        </div>
+
+        <!-- Tombol sosmed -->
+        <div class="social-row">
+
+          <!--
+            ======================================
+            GANTI LINK SOSMED DI SINI
+            Ganti href dengan URL profil Anda
+            ======================================
+          -->
+          <a href="https://www.youtube.com/@GANTI_CHANNEL" target="_blank" rel="noopener" class="soc-btn yt-soc" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true">
+              <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+            </svg>
+            YouTube
+          </a>
+
+          <a href="https://www.instagram.com/GANTI_USERNAME" target="_blank" rel="noopener" class="soc-btn ig-soc" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            </svg>
+            Instagram
+          </a>
+
+          <a href="https://www.tiktok.com/@GANTI_USERNAME" target="_blank" rel="noopener" class="soc-btn tt-soc" aria-label="TikTok">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true">
+              <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.34 6.34 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.76a4.85 4.85 0 01-1.01-.07z"/>
+            </svg>
+            TikTok
+          </a>
+
+        </div>
+      </div>
+
+      <!-- Form kontak -->
+      <form class="ct-form" id="ctForm" novalidate data-reveal>
+        <div class="cf-row">
+          <div class="cf-g">
+            <label for="cf-name">Nama</label>
+            <input type="text" id="cf-name" placeholder="Nama Anda" required/>
+          </div>
+          <div class="cf-g">
+            <label for="cf-email">Email</label>
+            <input type="email" id="cf-email" placeholder="email@anda.com" required/>
+          </div>
+        </div>
+        <div class="cf-g">
+          <label for="cf-need">Kebutuhan</label>
+          <!-- GANTI pilihan kebutuhan sesuai layanan yang Anda tawarkan -->
+          <select id="cf-need">
+            <option value="" disabled selected>Pilih kebutuhan...</option>
+            <option>Music Composition</option>
+            <option>Background Music</option>
+            <option>Sound Design / SFX</option>
+            <option>Mixing & Mastering</option>
+            <option>Kolaborasi</option>
+            <option>Lainnya</option>
+          </select>
+        </div>
+        <div class="cf-g">
+          <label for="cf-msg">Pesan</label>
+          <textarea id="cf-msg" rows="4" placeholder="Ceritakan proyek Anda..." required></textarea>
+        </div>
+        <button type="submit" class="btn-primary btn-full">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+          </svg>
+          Kirim Pesan
+        </button>
+        <!-- Pesan sukses — ditampilkan otomatis oleh JavaScript -->
+        <div class="cf-ok" id="cfOk" role="alert">
+          ✓ Pesan terkirim! Saya akan segera membalas.
+        </div>
+      </form>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════════
+     FOOTER
+══════════════════════════════════════════════ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-in">
+      <div class="footer-logo">
+        <span class="logo-mark" aria-hidden="true">♩</span>
+        <!-- GANTI NAMA DI SINI -->
+        <span>Fauzi Zaki Razaq</span>
+      </div>
+      <p>Music Composer &amp; Sound Designer</p>
+      <!-- GANTI TAHUN DAN NAMA DI SINI -->
+      <p class="footer-copy">© 2025 Fauzi Zaki Razaq · Crafting sound, telling stories.</p>
+    </div>
+  </div>
+</footer>
+
+
+<!-- Script — letakkan di akhir body agar halaman cepat load -->
+<script src="script.js"></script>
+
+</body>
+</html>
