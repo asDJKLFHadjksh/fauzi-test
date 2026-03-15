@@ -2,12 +2,13 @@
    script.js — FZR PRODUCTION Portfolio
    ────────────────────────────────────────────────────────────
    DAFTAR ISI:
-   1. Navbar — scroll effect + hamburger mobile
-   2. EQ Bar Animation — visualizer di hero
-   3. Tab Switching — portfolio Song / Animation / Instrumental
-   4. Reveal Animation — elemen muncul saat scroll
-   5. Stat Counter — angka animasi di hero
-   6. Contact Form — simulasi submit
+   1. Portfolio Config — atur link portfolio dari file config
+   2. Navbar — scroll effect + hamburger mobile
+   3. EQ Bar Animation — visualizer di hero
+   4. Tab Switching — portfolio Song / Animation / Instrumental
+   5. Reveal Animation — elemen muncul saat scroll
+   6. Stat Counter — angka animasi di hero
+   7. Contact Form — simulasi submit
 
    CATATAN UNTUK PEMULA:
    - Jangan ubah nama fungsi atau variabel.
@@ -20,7 +21,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   /* ══════════════════════════════════════════
-     1. NAVBAR
+     1. PORTFOLIO CONFIG
+     ──────────────────────────────────────────
+     Atur semua link card portfolio dari file
+     `portfolio.config.js`.
+  ══════════════════════════════════════════ */
+
+  const portfolioConfig = window.PORTFOLIO_CONFIG || {};
+  const portfolioDefaultUrl = portfolioConfig.defaultUrl || '#';
+  const portfolioCards = document.querySelectorAll('.work-card');
+
+  portfolioCards.forEach((card) => {
+    card.href = portfolioDefaultUrl;
+  });
+
+
+  /* ══════════════════════════════════════════
+     2. NAVBAR
      ──────────────────────────────────────────
      - Tambah class .scrolled saat halaman di-scroll
      - Toggle menu hamburger di mobile
@@ -68,7 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   /* ══════════════════════════════════════════
-     2. EQ BAR ANIMATION
+     3. EQ BAR ANIMATION
      ──────────────────────────────────────────
      Membuat batang-batang visualizer secara otomatis.
      BOLEH DIUBAH: BAR_COUNT (jumlah batang)
@@ -104,7 +121,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   /* ══════════════════════════════════════════
-     3. TAB SWITCHING — PORTFOLIO
+     4. TAB SWITCHING — PORTFOLIO
      ──────────────────────────────────────────
      Klik tab → panel sesuai tampil, lainnya sembunyi.
      JANGAN DIUBAH
@@ -151,7 +168,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   /* ══════════════════════════════════════════
-     4. REVEAL ANIMATION — SCROLL OBSERVER
+     5. REVEAL ANIMATION — SCROLL OBSERVER
      ──────────────────────────────────────────
      Elemen dengan [data-reveal] akan muncul
      perlahan saat masuk viewport.
@@ -183,7 +200,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   /* ══════════════════════════════════════════
-     5. STAT COUNTERS — ANIMASI ANGKA
+     6. STAT COUNTERS — ANIMASI ANGKA
      ──────────────────────────────────────────
      Angka di hero akan beranimasi dari 1 ke target
      saat masuk viewport. Mengulang jika di-scroll kembali.
