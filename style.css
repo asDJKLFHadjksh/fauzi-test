@@ -507,6 +507,32 @@ section { padding: 100px 0; }
   background: var(--bg2);
 }
 
+/* ─── Portfolio iframe video (small) ─── */
+.portfolio-video {
+  width: min(100%, 360px);
+  margin: 0 auto 28px;
+  padding: 12px;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  background: var(--bg3);
+}
+
+.portfolio-video iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+  border-radius: 10px;
+  display: block;
+}
+
+.portfolio-video-desc {
+  margin-top: 10px;
+  font-size: 0.82rem;
+  line-height: 1.45;
+  color: var(--text2);
+  text-align: center;
+}
+
 /* ─── Tab Buttons ─── */
 .ptabs {
   display: flex;
