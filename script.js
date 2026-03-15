@@ -113,6 +113,16 @@ document.addEventListener('DOMContentLoaded', () => {
   const tabBtns   = document.querySelectorAll('.ptab');
   const tabPanels = document.querySelectorAll('.tab-panel');
 
+  // Gunakan config global untuk link portfolio default
+  const portfolioConfig = window.PORTFOLIO_CONFIG || {};
+  const defaultPortfolioUrl = portfolioConfig.defaultVideoUrl || '';
+
+  if (defaultPortfolioUrl) {
+    document.querySelectorAll('.work-card').forEach((card) => {
+      card.href = defaultPortfolioUrl;
+    });
+  }
+
   tabBtns.forEach(btn => {
     btn.addEventListener('click', () => {
       const targetId = btn.dataset.tab; // ambil nilai data-tab="song" dll.
